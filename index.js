@@ -4,10 +4,12 @@ const mysql = require("mysql");
 
 const app = express();
 
-app.listen(3000, () => {
+const port = 3000;
+
+app.listen(port, () => {
     console.log("Server started ...");
 });
 
 app.get("/", (req, res) => {
     res.send("Hello From The Server");
-})
+});
